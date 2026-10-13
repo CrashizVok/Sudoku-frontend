@@ -15,6 +15,19 @@ function Board({children = {}}) {
         }
 
         let numbersDiff = false
+        let matches = 0
+
+        board.forEach((row) =>{
+            row.forEach((num, colIdx) =>{
+                if (num == solution[rowIdx][colIdx]) {
+                    matches++
+                }
+                else{
+                    numbersDiff = false
+                }
+            })
+        })
+        console.log(matches);
         
     }
 
