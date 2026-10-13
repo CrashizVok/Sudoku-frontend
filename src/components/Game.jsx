@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { ToastContainer, toast } from "react-toastify"
 import Board from './Board'
 
 function Game() {
@@ -19,6 +20,9 @@ function Game() {
     <div>
         {/*<p>TODO : JSON.stringify(gameData)</p>*/}
       <Board>{gameData}</Board>
+      <ToastContainer
+      position="top-center"
+      />
     </div>
   )
 }
