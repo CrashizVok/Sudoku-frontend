@@ -1,7 +1,13 @@
 import React from 'react'
 import Tile from './Tile'
 import "./Board.css"
-function Board() {
+function Board({children = {}}) {
+    console.log(children);
+    const {puzzle, solution} = children
+    console.log(puzzle);
+    console.log(solution);
+    
+    
   return (
     <div className='board'>
         <div className='row'>
